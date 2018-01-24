@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Other">
+      <UniqueIdentifier>{e313c1e2-6d27-4786-93bf-dfad3a7ac180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Texture">
+      <UniqueIdentifier>{549e616e-c521-4170-a32d-e7c1829b58f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shader">
+      <UniqueIdentifier>{48899e09-f5ff-41a3-ba82-18cf19268395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Object">
+      <UniqueIdentifier>{825a92ca-7f81-46ef-a29f-40779178c906}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderLoader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stb_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Skybox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="shader\CubeFS.glsl">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="shader\LightFS.glsl">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="shader\CubeVS.glsl">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="shader\LightVS.glsl">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="shader\SkyboxFS.glsl">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="shader\SkyboxVS.glsl">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="shader\ModelFS.glsl">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+    <None Include="shader\ModelVS.glsl">
+      <Filter>Resource Files\Shader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Header Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Materials.h">
+      <Filter>Header Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyboxData.h">
+      <Filter>Header Files\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="texture\container.jpg">
+      <Filter>Resource Files\Texture</Filter>
+    </Image>
+    <Image Include="texture\steelBox.jpg">
+      <Filter>Resource Files\Texture</Filter>
+    </Image>
+    <Image Include="texture\woodBox.jpg">
+      <Filter>Resource Files\Texture</Filter>
+    </Image>
+    <Image Include="texture\negx.jpg">
+      <Filter>Resource Files\Texture</Filter>
+    </Image>
+    <Image Include="texture\negy.jpg">
+      <Filter>Resource Files\Texture</Filter>
+    </Image>
+    <Image Include="texture\negz.jpg">
+      <Filter>Resource Files\Texture</Filter>
+    </Image>
+    <Image Include="texture\posx.jpg">
+      <Filter>Resource Files\Texture</Filter>
+    </Image>
+    <Image Include="texture\posy.jpg">
+      <Filter>Resource Files\Texture</Filter>
+    </Image>
+    <Image Include="texture\posz.jpg">
+      <Filter>Resource Files\Texture</Filter>
+    </Image>
+    <Image Include="texture\aluminium-brushed-metal-texture.jpg">
+      <Filter>Resource Files\Texture</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
