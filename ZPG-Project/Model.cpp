@@ -3,7 +3,7 @@
 Model::Model(const char * vertexFile, const char * fragmentFile, const char * objectFile, const char *textureFile)
 {
 	shader = new Shader(vertexFile, fragmentFile);
-	texture = new Texture(textureFile);
+	//texture = new Texture(textureFile);
 
 	glGenVertexArrays(1, &vao);
 	glGenBuffers(1, &vbo);
@@ -43,6 +43,15 @@ void Model::load(const char * objectFile)
 			glm::vec4 diffuse = glm::vec4(0.8f, 0.8f, 0.8f, 1.0f);
 			if (AI_SUCCESS == aiGetMaterialColor(mat, AI_MATKEY_COLOR_DIFFUSE, &d))
 				diffuse = glm::vec4(d.r, d.g, d.b, d.a);
+
+			aiString texturePath;
+			unsigned int numTextures = mat->GetTextureCount(aiTextureType_DIFFUSE); 
+
+			if (mat->GetTextureCount(aiTextureType_DIFFUSE) > 0 && mat->GetTexture(aiTextureType_DIFFUSE, 0, &texturePath) == AI_SUCCESS)
+			{	
+				string fullPath = string(objectFile).substr(0, string(objectFile).find_last_of("\\/")) + "/" + texturePath.data;
+				texture = new Texture(fullPath.c_str());
+			}
 		}
 
 		for (unsigned int i = 0; i < scene->mNumMeshes; i++)                      //Objects

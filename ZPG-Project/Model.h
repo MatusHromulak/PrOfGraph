@@ -15,6 +15,13 @@ struct Vertex
 	glm::vec3 Tangent;
 };
 
+struct TexData
+{
+	unsigned int id;
+	string type;
+	string path;
+};
+
 class Model
 {
 	Shader *shader;

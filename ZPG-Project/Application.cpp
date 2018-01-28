@@ -111,15 +111,15 @@ void Application::run()
 {
 	printf("Application::run\n");
 
-	Object woodCube(".\\shader\\CubeVS.glsl", ".\\shader\\CubeFS.glsl", woodTex.file.c_str(), GL_TRIANGLES, 0, cubeItemCount, cubeVertices, woodTex.ambient, woodTex.diffuse, woodTex.specular, woodTex.shininess);
+	Object woodCube("./shader/CubeVS.glsl", "./shader/CubeFS.glsl", woodTex.file.c_str(), GL_TRIANGLES, 0, cubeItemCount, cubeVertices, woodTex.ambient, woodTex.diffuse, woodTex.specular, woodTex.shininess);
 	unsigned int vbo = woodCube.getVBO();
 	woodCube.dontDisposeVBO();
 	
-	Object steelCube(".\\shader\\CubeVS.glsl", ".\\shader\\CubeFS.glsl", steelTex.file.c_str(), GL_TRIANGLES, 0, cubeItemCount, cubeVertices, steelTex.ambient, steelTex.diffuse, steelTex.specular, steelTex.shininess, vbo);
-	Light cubeSun(".\\shader\\LightVS.glsl", ".\\shader\\LightFS.glsl", GL_TRIANGLES, 0, cubeItemCount, cubeVertices, glm::vec3(1.0f, 1.0f, 0.0f), 0.1f, vbo);
-	Skybox skybox(".\\shader\\SkyboxVS.glsl", ".\\shader\\SkyboxFS.glsl", faces, GL_TRIANGLES, 0, skyboxItemCount, skyboxVertices);
-	Model testModel(".\\shader\\ModelVS.glsl", ".\\shader\\ModelFS.glsl", ".\\object\\test\\test.obj", ".\\object\\test\\test.png");
-	//Model testModel(".\\shader\\ModelVS.glsl", ".\\shader\\ModelFS.glsl", ".\\object\\rabbit\\Rabbit.obj", ".\\object\\rabbit\\Rabbit_D.tga");
+	Object steelCube("./shader/CubeVS.glsl", "./shader/CubeFS.glsl", steelTex.file.c_str(), GL_TRIANGLES, 0, cubeItemCount, cubeVertices, steelTex.ambient, steelTex.diffuse, steelTex.specular, steelTex.shininess, vbo);
+	Light cubeSun("./shader/LightVS.glsl", "./shader/LightFS.glsl", GL_TRIANGLES, 0, cubeItemCount, cubeVertices, glm::vec3(1.0f, 1.0f, 0.0f), 0.1f, vbo);
+	Skybox skybox("./shader/SkyboxVS.glsl", "./shader/SkyboxFS.glsl", faces, GL_TRIANGLES, 0, skyboxItemCount, skyboxVertices);
+	Model testModel("./shader/ModelVS.glsl", "./shader/ModelFS.glsl", "./object/test/test.obj", "./object/test/test.png");
+	//Model testModel("./shader/ModelVS.glsl", "./shader/ModelFS.glsl", "./object/rabbit/Rabbit.obj", "./object/rabbit/Rabbit_D.tga");
 
 	while (!glfwWindowShouldClose(window))
 	{
